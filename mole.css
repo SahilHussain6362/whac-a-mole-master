@@ -5,31 +5,46 @@ body {
     text-align: center;
 }
 #board {
-    height: 540px;
-    width: 540px;
+    height: 35vmax;
+    width: 35vmax;
 
     display: flex;
     margin: 0 auto;
     flex-wrap: wrap;
 
     background: url('/img/soil.png');
-    border-radius: 20px; 
-    border: 3px solid white;
+    border-radius: 2vmax; 
+    border: 0.50vmax solid white;
 }
 #board div {
-    width: 180px;
-    height: 180px;
+    width: 11.33vmax;
+    height: 11.33vmax;
     background: url('/img/pipe.png');
     background-size: cover;
 }
 
 #board div img {
-    width: 100px;
-    height: 100px;
+    width: 7vmax;
+    height: 7vmax;
 
     user-select: none;
     -moz-user-select: none;
     -webkit-user-drag: none;
     -webkit-user-select: none;
     -ms-user-select: none;
+}
+
+@media (max-width: 480px) {
+    #board{
+        height: 90vmin;
+        width: 90vmin;
+    }
+    #board div {
+        width: 30vmin;
+        height: 30vmin;
+    }
+    #board div img {
+        width: 17vmin;
+        height: 17vmin;
+    }
 }
