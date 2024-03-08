@@ -2,6 +2,7 @@ let currentMoleTile;
 let currentPlantTile;
 let score = 0;
 let gameOver = false;
+let clicked = false;
 
 window.onload = function() {
     setGame();
@@ -35,7 +36,7 @@ function setMole(){
     if(currentPlantTile && currentPlantTile.id == num) {
         return;
     }
-    
+    clicked = false;
     currentMoleTile = document.getElementById(num);
     currentMoleTile.appendChild(mole);
 }
@@ -61,12 +62,33 @@ function selectTile(){
     if(gameOver){
         return;
     }
-    if(this == currentMoleTile){
+    if(this == currentMoleTile && clicked == false){
         score += 10;
         document.getElementById("score").innerText = score.toString();
+        clicked = true;
     }
     else if(this == currentPlantTile){
         document.getElementById("score").innerText = "GAME OVER: " + score.toString();
         gameOver = true;
     }
 }
+function getDiv(pressed){
+    let toInt = parseInt(pressed);
+    if(toInt == NaN) return "a";
+    toInt--;
+    return toInt.toString(); 
+}
+addEventListener("keypress", function(event){
+    var pressed = event.key;
+    pressed = getDiv(pressed);
+    console.log(currentMoleTile.id);
+    if(pressed == currentMoleTile.id && clicked == false){
+        score += 10;
+        document.getElementById("score").innerText = score.toString();
+        clicked = true;
+    }
+    else if (pressed == currentPlantTile.id){
+        document.getElementById("score").innerText = "GAME OVER: " + score.toString();
+        gameOver = true;
+    }
+})
