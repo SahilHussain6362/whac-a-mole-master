@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: url('/img/mario-bg.jpg');
+    background-size: cover;
+    text-align: center;
+}
+#board {
+    height: 540px;
+    width: 540px;
+
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+
+    background: url('/img/soil.png');
+    border-radius: 20px; 
+    border: 3px solid white;
+}
+#board div {
+    width: 180px;
+    height: 180px;
+    background: url('/img/pipe.png');
+    background-size: cover;
+}
+
+#board div img {
+    width: 100px;
+    height: 100px;
+}
