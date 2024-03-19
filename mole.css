@@ -12,7 +12,7 @@
     margin: 0 auto;
     flex-wrap: wrap;
 
-    background: url('/img/soil.png');
+    background: url('./img/soil.png');
     border-radius: 2vmax; 
     border: 0.50vmax solid white;
 }
