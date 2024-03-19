@@ -34,6 +34,14 @@ body {
     -ms-user-select: none;
 }
 
+button{
+    background: transparent;
+    border: 0vmin;
+}
+h1, h2{
+    margin-top: 1vmin;
+    margin-bottom: 1vmin;
+}
 @media (max-width: 480px) {
     #board{
         height: 90vmin;
