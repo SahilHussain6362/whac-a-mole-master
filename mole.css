@@ -1,6 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: url('/img/mario-bg.jpg');
+    background: url('./img/mario-bg.jpg');
     background-size: cover;
     text-align: center;
 }
@@ -12,14 +12,14 @@ body {
     margin: 0 auto;
     flex-wrap: wrap;
 
-    background: url('/img/soil.png');
+    background: url('./img/soil.png');
     border-radius: 2vmax; 
     border: 0.50vmax solid white;
 }
 #board div {
     width: 11.33vmax;
     height: 11.33vmax;
-    background: url('/img/pipe.png');
+    background: url('./img/pipe.png');
     background-size: cover;
 }
 

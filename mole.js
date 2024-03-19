@@ -5,6 +5,7 @@ let gameOver = false;
 let clicked = false;
 let flag = false;
 let mole, plant;
+
 window.onload = function() {
     setGame();
 }
@@ -73,7 +74,7 @@ function setPlant(){
         currentPlantTile.innerHTML = "";
     }
     let plant = document.createElement("img");
-    plant.src = "/img/piranha-plant.png";
+    plant.src = "./img/piranha-plant.png";
 
     let num = getRandomTile();
     if(currentMoleTile && currentMoleTile.id == num) {
