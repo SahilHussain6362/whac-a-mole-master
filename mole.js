@@ -33,7 +33,7 @@ function startGame(){
         flag = false;
     }
     else if (status === "Play Again"){
-        document.getElementById("play").textContent = "<h2>Pause</h2>";
+        document.getElementById("play").innerHTML = "<h2>Pause</h2>";
         score = 0;
         document.getElementById("score").innerText = score.toString();
         gameOver = false;
@@ -95,7 +95,7 @@ function selectTile(){
     }
     else if(this == currentPlantTile){
         document.getElementById("score").innerText = "GAME OVER: " + score.toString();
-        document.getElementById("play").innerText = "Play Again";
+        document.getElementById("play").innerHTML = "<h2>Play Again</h2>";
         gameOver = true;
         clearInterval(mole);
         clearInterval(plant);
@@ -118,7 +118,7 @@ addEventListener("keypress", function(event){
     }
     else if (pressed == currentPlantTile.id){
         document.getElementById("score").innerText = "GAME OVER: " + score.toString();
-        document.getElementById("play").innerText = "Play Again";
+        document.getElementById("play").innerHTML = "<h2>Play Again</h2>";
         gameOver = true;
     }
 })

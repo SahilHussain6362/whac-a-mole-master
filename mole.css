@@ -1,4 +1,4 @@
-.body {
+body {
     font-family: Arial, Helvetica, sans-serif;
     background: url('./img/mario-bg.jpg');
     background-size: cover;
@@ -34,7 +34,7 @@
     -ms-user-select: none;
 }
 
-.button{
+button{
     background: transparent;
     border: 0vmin;
 }
