@@ -1,6 +1,6 @@
-body {
+.body {
     font-family: Arial, Helvetica, sans-serif;
-    background: url('/img/mario-bg.jpg');
+    background: url('./img/mario-bg.jpg');
     background-size: cover;
     text-align: center;
 }
@@ -19,7 +19,7 @@ body {
 #board div {
     width: 11.33vmax;
     height: 11.33vmax;
-    background: url('/img/pipe.png');
+    background: url('./img/pipe.png');
     background-size: cover;
 }
 
@@ -34,7 +34,7 @@ body {
     -ms-user-select: none;
 }
 
-button{
+.button{
     background: transparent;
     border: 0vmin;
 }
